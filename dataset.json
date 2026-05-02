@@ -1,0 +1,17 @@
+[
+  {
+    "task": "Parse an AWS S3 bucket name from an S3 URI and extract just the bucket name. Example input: 's3://my-bucket-name/path/to/object.txt'",
+    "format": "regex",
+    "solution_criteria": "Must correctly extract 'my-bucket-name' from various S3 URI formats, handling both virtual-hosted and path-style URIs"
+  },
+  {
+    "task": "Create a Python function that takes an AWS IAM policy JSON string and returns a list of all actions (Resource-based or Identity-based) specified in the policy",
+    "format": "python",
+    "solution_criteria": "Function must parse JSON, handle nested statements, and return a deduplicated list of actions including wildcards like 's3:*'"
+  },
+  {
+    "task": "Generate a JSON CloudFormation template snippet that defines an AWS Lambda execution role with basic S3 read permissions",
+    "format": "json",
+    "solution_criteria": "Must include proper IAM role definition, assume role policy for Lambda service, and an inline policy granting s3:GetObject permissions"
+  }
+]
