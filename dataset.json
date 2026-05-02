@@ -1,17 +1,49 @@
 [
   {
-    "task": "Parse an AWS S3 bucket name from an S3 URI and extract just the bucket name. Example input: 's3://my-bucket-name/path/to/object.txt'",
-    "format": "regex",
-    "solution_criteria": "Must correctly extract 'my-bucket-name' from various S3 URI formats, handling both virtual-hosted and path-style URIs"
+    "prompt_inputs": {
+      "height": "178 cm",
+      "weight": "75 kg",
+      "goal": "endurance training with muscle maintenance",
+      "restrictions": "vegetarian, gluten-free, dairy allergy"
+    },
+    "solution_criteria": [
+      "Meal plan covers all three meals and meets athlete's daily caloric and protein needs",
+      "All meals comply with vegetarian, gluten-free, and dairy-free restrictions",
+      "Plan is presented in compact, concise format suitable for a single day"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with an athlete having multiple dietary restrictions (vegetarian + gluten-free + dairy allergy) to verify the meal plan accommodates constraints while meeting athletic nutritional needs"
   },
   {
-    "task": "Create a Python function that takes an AWS IAM policy JSON string and returns a list of all actions (Resource-based or Identity-based) specified in the policy",
-    "format": "python",
-    "solution_criteria": "Function must parse JSON, handle nested statements, and return a deduplicated list of actions including wildcards like 's3:*'"
+    "prompt_inputs": {
+      "height": "180 cm",
+      "weight": "85 kg",
+      "goal": "Muscle gain and strength improvement for weightlifting",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Meal plan contains exactly 4 meals distributed throughout the day with adequate protein at each meal (minimum 30g per meal)",
+      "Total daily calories and macronutrient targets are appropriate for a strength athlete (approximately 2800-3200 kcal with 25-30% protein)",
+      "Includes specific food items and portion sizes for each meal",
+      "Emphasizes muscle recovery with carbohydrates and protein timing around training"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a strength-focused athlete (weightlifter) emphasizing protein distribution and muscle recovery, with different macronutrient ratios than endurance sports"
   },
   {
-    "task": "Generate a JSON CloudFormation template snippet that defines an AWS Lambda execution role with basic S3 read permissions",
-    "format": "json",
-    "solution_criteria": "Must include proper IAM role definition, assume role policy for Lambda service, and an inline policy granting s3:GetObject permissions"
+    "prompt_inputs": {
+      "height": "178 cm",
+      "weight": "68 kg",
+      "goal": "Marathon training with carbohydrate loading and high caloric intake for endurance performance",
+      "restrictions": "Vegetarian, no nuts"
+    },
+    "solution_criteria": [
+      "Meal plan includes at least 3,000+ calories distributed across breakfast, lunch, dinner, and snacks",
+      "Contains carbohydrate-rich foods (pasta, rice, oats, bread) comprising 60-65% of calories",
+      "Includes meal timing strategy with pre/post-training nutrition considerations",
+      "Respects vegetarian and nut-free dietary restrictions"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a high-endurance athlete (marathon runner) requiring significant caloric intake and carbohydrate loading, with specific timing around training sessions"
   }
 ]
